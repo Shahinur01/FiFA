@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+* {
+  padding: 0 rem;
+  margin: 0rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Rajdhani', sans-serif !important;
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  background-image: url('./images/fifa1.jpg');
+  color: #07081d !important;
+  background-attachment: fixed;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.212) !important;
+  color: #fff !important;
+}
+
+.card:hover {
+  background: linear-gradient(rgba(255, 2, 2, 0.685), rgba(11, 29, 39, 0.466)) rgba(112, 99, 99, 0.212) !important;
+}
+
+.jumbotron {
+  padding: 12rem 0 !important;
+  background-image: url(./images/FIFA.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: aliceblue;
+}
+
+/* = = = = */
+
+.loaders{
+	background-color: #1d0505;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.indicator {
+	border-radius: inherit;
+	transform: translateX(-90%);
+	-webkit-animation: loading 3s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+	animation: loading 3s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+}
+
+.indicator::before {
+	content: "";
+	display: block;
+	height: 4px;
+	background-color: rgb(48, 8, 8);
+	border-radius: inherit;
+	width: 100%;
+}
+
+@-webkit-keyframes loading {
+	from {
+		transform: translate3d(-90%, 0, 0);
+	}
+	to {
+		transform: translate3d(90%, 0, 0);
+	}
+}
+
+@keyframes loading {
+	from {
+		transform: translate3d(-90%, 0, 0);
+	}
+	to {
+		transform: translate3d(90%, 0, 0);
+	}
+}
